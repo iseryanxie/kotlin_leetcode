@@ -1,5 +1,11 @@
 package com.ryanxie.leetcode
-
+/**
+ * Write your thoughts here
+ * 1. check for negative to negate
+ * 2. template to get each digit of the int
+ * 3. Use Long to avoid overflow
+ * 4. Convert Long back to Int with Int.MAX_VALUE
+ */
 class Solution0007 {
     fun reverse(x: Int): Int {
         val negFlag = x < 0
