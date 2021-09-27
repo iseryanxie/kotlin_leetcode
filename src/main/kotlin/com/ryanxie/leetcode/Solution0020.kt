@@ -2,6 +2,7 @@ package com.ryanxie.leetcode
 
 /**
  * Write your thoughts here
+ * Stack as ArrayDeque
  */
 class Solution0020 {
     fun isValid(s: String): Boolean {
