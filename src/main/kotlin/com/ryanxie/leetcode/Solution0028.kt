@@ -3,7 +3,7 @@ package com.ryanxie.leetcode
 /**
  * Write your thoughts here
  * substring will throw exception if out of bound
- *
+ * iterate string with .indices method
  */
 class Solution0028 {
     fun strStr(haystack: String, needle: String): Int {
