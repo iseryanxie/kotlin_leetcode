@@ -3,12 +3,12 @@ package com.ryanxie.leetcode
  * Write your thoughts here
  * at any given node, find the longer path from left + right child and the current max
  */
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
 class Solution0543 {
 
+    class TreeNode(var `val`: Int) {
+        var left: TreeNode? = null
+        var right: TreeNode? = null
+    }
     fun diameterOfBinaryTree(root: TreeNode?): Int {
         if (root == null) return 0
         var diameter = 0
