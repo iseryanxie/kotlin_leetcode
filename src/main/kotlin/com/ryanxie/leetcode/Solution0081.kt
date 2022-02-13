@@ -2,7 +2,8 @@ package com.ryanxie.leetcode
 
 /**
  * Write your thoughts here
- * use arrays to store the rows and columns that needs to be zero, before start to change matrix
+ * remove duplicates
+ * binary search variant
  */
 class Solution0081 {
     fun search(nums: IntArray, target: Int): Boolean {
