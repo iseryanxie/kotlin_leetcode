@@ -9,6 +9,7 @@ class Solution0113 {
             return
         }
         path.add(root.`val`)
+        // must be a leaf node to be a valid path
         if (root.left == null && root.right == null && root.`val` == target) {
             res.add(path.toMutableList())
         }
