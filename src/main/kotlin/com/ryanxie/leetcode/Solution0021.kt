@@ -12,7 +12,6 @@ package com.ryanxie.leetcode
  *     var next: ListNode? = null
  * }
  */
-class ListNode(var `val`: Int) {var next: ListNode? = null}
 class Solution0021 {
     fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
         var dummyHead:ListNode? = ListNode(0)
