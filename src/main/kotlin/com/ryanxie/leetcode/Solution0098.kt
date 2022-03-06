@@ -12,6 +12,7 @@ class Solution0098 {
                 isValidBSTMinMax(root.left, minValue, root.`val`.toLong()) &&
                 isValidBSTMinMax(root.right, root.`val`.toLong(), maxValue)
     }
+
     fun isValidBST(root: TreeNode?): Boolean {
         if (root == null) return true
         return isValidBSTMinMax(root, Long.MIN_VALUE, Long.MAX_VALUE)
