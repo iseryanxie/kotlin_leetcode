@@ -14,6 +14,7 @@ class Solution0099 {
         var curr: TreeNode? = root
         while (curr != null) {
             if (curr.left == null) {
+                // visit the node
                 if (prev != null && prev.`val` > curr.`val`) {
                     if (firstWrong == null) {
                         firstWrong = prev
@@ -35,10 +36,13 @@ class Solution0099 {
                         if (firstWrong == null) {
                             firstWrong = prev
                         }
-                        secondWrong = curr
+                        secondWrong = curr // set the second wrong element at the same time, because it could
+                        // happen at the same time, for example, 1,3,2,4. In this case, the first wrong element is
+                        // next to the second wrong element.
+                        // a more general case is 1,3,2,4,6,5,7. In this case, there are two different wrong elements.
                     }
                     prev = curr
-                    temp.right = null
+                    temp.right = null // finished traversal, restore the original tree
                     curr = curr.right
                 }
             }
