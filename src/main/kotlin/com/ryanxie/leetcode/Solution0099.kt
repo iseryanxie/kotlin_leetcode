@@ -45,49 +45,4 @@ class Solution0099 {
         }
         firstWrong!!.`val` = secondWrong!!.`val`.also { secondWrong!!.`val` = firstWrong!!.`val` }
     }
-//    fun recoverTree(root: TreeNode?): Unit {
-//        var first: TreeNode? = null
-//        var second: TreeNode? = null
-//        var prev: TreeNode? = null
-//        var firstTime = true
-//        var curr: TreeNode? = root
-//        while (curr != null) {
-//            if (curr.left != null) {
-//                var temp = curr.left
-//                while (temp!!.right != null && temp.right != root) {
-//                    temp = temp.right // find the rightmost node of left subtree
-//                }
-//                if (temp.right == null) {
-//                    temp.right = curr
-//                    curr = curr.left // set up the rightmost node of left subtree as the root
-//                } else {
-//                    // finished traversal the tree at root, restore the tree
-//                    temp.right = null
-//                    // visit the root value
-//                    if (prev != null && prev.`val` > curr.`val` && firstTime) {
-//                        first = prev
-//                        firstTime = false
-//                    }
-//                    if (prev != null && prev.`val` > curr.`val` && !firstTime) {
-//                        second = curr
-//                    }
-//                    prev = root
-//                    curr = curr.right
-//                }
-//            } else {
-//                // visit the curr value
-//                if (prev != null && prev.`val` > curr.`val` && firstTime) {
-//                    first = prev
-//                    firstTime = false
-//                }
-//                if (prev != null && prev.`val` > curr.`val` && !firstTime) {
-//                    second = curr
-//                }
-//                prev = root
-//                curr = curr.right
-//            }
-//        }
-//        // swap the values of first and second
-//        first!!.`val` = second!!.`val`.also { second!!.`val` = first!!.`val` }
-//    }
 }
