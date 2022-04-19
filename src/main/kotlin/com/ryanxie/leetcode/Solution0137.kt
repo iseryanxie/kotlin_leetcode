@@ -2,6 +2,9 @@ package com.ryanxie.leetcode
 
 /**
  * Write your thoughts here
+ * for each bit, add up the value and then take the mod of 3
+ * add back the values
+ * This approach takes care of both positive and negative numbers, because signs are stored in bits too
  */
 class Solution0137 {
     fun singleNumber(nums: IntArray): Int {
