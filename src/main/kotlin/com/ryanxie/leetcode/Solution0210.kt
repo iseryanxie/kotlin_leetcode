@@ -2,6 +2,7 @@ package com.ryanxie.leetcode
 
 /**
  * Write your thoughts here
+ * topological sort
  */
 class Solution0210 {
     fun findOrder(numCourses: Int, prerequisites: Array<IntArray>): IntArray {
