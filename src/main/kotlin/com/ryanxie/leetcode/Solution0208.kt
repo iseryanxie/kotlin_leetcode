@@ -5,7 +5,10 @@ package com.ryanxie.leetcode
  */
 class Solution0208 {
     class TrieNode() {
-        val children: MutableMap<Char, TrieNode> = mutableMapOf<Char, TrieNode>()
+        // Trie Node should contain
+        // 1. children that maps the char to its corresponding trie node, e.g., a-> Node()
+        // 2. whether it forms a complete word
+        val children: MutableMap<Char, TrieNode> = mutableMapOf()
         var endOfWord: Boolean = false
     }
 
