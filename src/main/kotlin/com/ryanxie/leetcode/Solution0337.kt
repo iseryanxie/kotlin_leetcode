@@ -6,6 +6,7 @@ package com.ryanxie.leetcode
  */
 class Solution0337 {
     fun rob(root: TreeNode?): Int {
+        // map of node to max value
         val memo = mutableMapOf<TreeNode?, Int>()
         return rob(root, memo)
     }
