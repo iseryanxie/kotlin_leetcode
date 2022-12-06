@@ -8,6 +8,7 @@ package com.ryanxie.leetcode
  */
 class Solution0357 {
     fun countNumbersWithUniqueDigits(n: Int): Int {
+        // + 1 because 0 is a valid number for single digit number
         return (1..n).map { numPermutations(10, it) - numPermutations(9, it - 1) }.sum() + 1
     }
     // helper function to calculate number of permutation
