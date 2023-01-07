@@ -17,7 +17,7 @@ class Solution0373 {
         pq.offer(Pair(0, 0)) // start with index (0,0)
         val result = mutableListOf<List<Int>>()
         while (result.size < k && pq.isNotEmpty()) {
-            val (i, j) = pq.poll() // the index of the smallest pair sum
+            val (i, j) = pq.poll() // the index of the smallest pair sum, serves as two pointers to indicate the next pair to add
             result.add(listOf(nums1[i], nums2[j]))
             // if the index is (0,j), add (0,j+1) to the queue, because (i=0,j+1) or (i+1,j) is the next smallest pair sum
             if (i == 0 && j + 1 < nums2.size) pq.offer(Pair(i, j + 1))

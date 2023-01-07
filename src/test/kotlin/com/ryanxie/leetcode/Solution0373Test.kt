@@ -31,4 +31,18 @@ class Solution0373Test {
         )
         expectThat(actual).isEqualTo(expected)
     }
+
+
+    @Test
+    fun test3() {
+        val actual = solution.kSmallestPairs(
+            intArrayOf(1, 2),
+            intArrayOf(4, 5, 6),
+            5
+        )
+        val expected = listOf(
+            listOf(1, 4), listOf(1, 5), listOf(2, 4), listOf(2, 5), listOf(1, 6)
+        )
+        expectThat(actual).isEqualTo(expected)
+    }
 }
