@@ -11,9 +11,9 @@ class Solution0397 {
 //            if (num % 2 == 0) {
 //                num /= 2
 //            } else {
-//                if (num % 4 == 1 || num == 3) {
+//                if (num % 4 == 1 || num == 3) { // if n = 4k + 1, then it is faster to -1 to get to k, except when n = 3, because 3-1 = 2, not 4k
 //                    num -= 1
-//                } else {
+//                } else { // if n = 4k + 3, then it is faster to +1 to get to 4k + 4
 //                    num += 1
 //                }
 //            }
@@ -29,7 +29,7 @@ class Solution0397 {
 //            if (i % 2 == 0) {
 //                dp[i] = dp[i / 2] + 1
 //            } else {
-//                dp[i] = Math.min(dp[i - 1]+1, dp[(i + 1)/2]+2)
+//                dp[i] = Math.min(dp[i - 1] + 1, dp[(i + 1) / 2] + 2) // i - 1 then take another step, or i + 1 but then divide by 2 takes 2 steps
 //            }
 //        }
 //        return dp[n]
