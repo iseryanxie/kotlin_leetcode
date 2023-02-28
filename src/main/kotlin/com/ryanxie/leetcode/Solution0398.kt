@@ -1,7 +1,5 @@
 package com.ryanxie.leetcode
 
-import java.util.stream.Collectors.toMap
-
 /**
  * Write your thoughts here
  */
