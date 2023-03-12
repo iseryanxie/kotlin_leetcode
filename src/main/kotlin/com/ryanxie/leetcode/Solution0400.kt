@@ -11,6 +11,7 @@ class Solution0400 {
         var digit = 1
         // track the start of current digit number, say 1, 10, 100, 1000, etc.
         var start = 1
+        // base use long to avoid integer overflow in test case 1000000000
         var base = 9L
         while (n > digit* base) {
             n -= (digit * base).toInt()
