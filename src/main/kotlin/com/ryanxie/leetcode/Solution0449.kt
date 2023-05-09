@@ -1,6 +1,5 @@
 package com.ryanxie.leetcode
 
-import javax.swing.text.html.HTML.Attribute.N
 
 /**
  * Write your thoughts here
