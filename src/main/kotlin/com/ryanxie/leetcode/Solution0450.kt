@@ -29,6 +29,7 @@ class Solution0450 {
         }
         return root
     }
+
     private fun findMin(root: TreeNode?): TreeNode {
         var node = root
         while (node?.left != null) {
