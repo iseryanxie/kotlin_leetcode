@@ -17,6 +17,7 @@ class Solution0473 {
             return false
         }
         val side = sum / 4
+        // sort and start from the largest, which makes things faster
         Arrays.sort(matchsticks)
 
         // add memo to avoid TLE
