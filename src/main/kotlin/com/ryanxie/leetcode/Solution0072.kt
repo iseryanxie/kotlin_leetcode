@@ -8,7 +8,7 @@ class Solution0072 {
         val m = word1.length
         val n = word2.length
         // dp[i][j] represents the minimum number of operations to convert word1[0..i) to word2[0..j)
-        // use a 2D array to represent the dp table
+        // use a 2D array of (m+1, n+1) to represent the dp table, with extra column and row for base case of empty string
         val dp = Array(m + 1) { IntArray(n + 1) }
         for (i in 0..m) {
             // base case: word1 is empty
