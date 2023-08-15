@@ -25,6 +25,8 @@ class Solution0703(val k: Int, val nums: IntArray) {
     fun add(ele: Int): Int {
         if (pq.size == K) {
             if (pq.peek() < ele) {
+                // if the new element is larger than the smallest element in the heap
+                // remove the smallest element and add the new element
                 pq.poll()
                 pq.offer(ele)
             }
