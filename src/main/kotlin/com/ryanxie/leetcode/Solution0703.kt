@@ -1,6 +1,5 @@
 package com.ryanxie.leetcode
 
-import jdk.vm.ci.code.CodeUtil.K
 import java.util.*
 
 /**
@@ -23,7 +22,7 @@ class Solution0703(val k: Int, val nums: IntArray) {
     }
 
     fun add(ele: Int): Int {
-        if (pq.size == K) {
+        if (pq.size == k) {
             if (pq.peek() < ele) {
                 // if the new element is larger than the smallest element in the heap
                 // remove the smallest element and add the new element
