@@ -2,6 +2,10 @@ package com.ryanxie.leetcode
 
 /**
  * Write your thoughts here
+ * Pigeonhole principle
+ * https://en.wikipedia.org/wiki/Pigeonhole_principle
+ * The maximum gap will be no smaller than ceiling[(max - min ) / (N - 1)]
+ * So the maximum gap can only be found in the gaps between buckets
  */
 class Solution0164 {
     fun maximumGap(nums: IntArray): Int {
@@ -10,8 +14,9 @@ class Solution0164 {
         }
         val min = nums.minOrNull()!!
         val max = nums.maxOrNull()!!
-        //
+        // determine the size of bucket
         val bucketSize = maxOf(1, (max - min) / (nums.size - 1))
+        // based on the size of bucket, determine the max number of buckets
         val bucketCount = (max - min) / bucketSize + 1
         val buckets = Array(bucketCount) { Bucket() }
         for (num in nums) {
