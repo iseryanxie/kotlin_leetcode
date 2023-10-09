@@ -9,7 +9,7 @@ class Solution1143 {
         val m = text1.length
         val n = text2.length
         // dp[i][j] is the longest common subsequence of text1[0..i-1] and text2[0..j-1]
-        // all elements are initialized to 0
+        // all elements are initialized to 0, so the base case is dp[0][0] = 0
         val dp = Array(m + 1) { IntArray(n + 1) }
         for (m in 1..m) {
             for (n in 1..n) {
